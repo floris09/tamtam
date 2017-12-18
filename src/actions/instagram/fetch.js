@@ -6,9 +6,9 @@ const api = new API()
 export default () => {
   return (dispatch) => {
 
-    api.get('/')
+    api.get('https://api.instagram.com/oembed?url=http://instagr.am/p/BcU1Dy0gvRn')
       .then((result) => {
-
+        console.log('result body:' + result.body)
         dispatch({
           type: FETCHED_INSTAGRAM,
           payload: result.body
