@@ -2,18 +2,19 @@ import React, { PureComponent } from 'react'
 import { connect } from 'react-redux'
 import { push } from 'react-router-redux'
 import fetchInstagram from '../actions/instagram/fetch'
-import '../styles/Home.css'
+import Instagram from '../components/Instagram'
+import '../styles/containers/Home.css'
 
 class Home extends PureComponent {
 
 componentWillMount(){
-  this.props.fetchInstagram()
+
 }
 
 render() {
   return (
     <div className="Home">
-      <img src={this.props.instagram.thumbnail_url} alt='instagram' />
+      <Instagram />
     </div>
   )
 }
