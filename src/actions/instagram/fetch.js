@@ -6,7 +6,7 @@ const api = new API()
 export default () => {
   return (dispatch) => {
 
-    api.get('https://api.instagram.com/oembed?url=http://instagr.am/p/BcU1Dy0gvRn')
+    api.get(`https://api.instagram.com/v1/users/tamtamnl/media/recent/?access_token=${process.env.ACCESS_TOKEN}`)
       .then((result) => {
         console.log('result body:' + result.body)
         dispatch({
