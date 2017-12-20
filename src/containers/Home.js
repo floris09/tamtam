@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react'
 import { connect } from 'react-redux'
 import { push } from 'react-router-redux'
 import fetchInstagram from '../actions/instagram/fetch'
-import { Instagram, About, Slider, Navbar } from '../components'
+import { Instagram, About, Slider, Navbar, Footer } from '../components'
 import '../styles/containers/Home.css'
 
 class Home extends PureComponent {
@@ -18,6 +18,7 @@ render() {
       <Slider />
       <About />
       <Instagram />
+      <Footer />
     </div>
   )
 }
