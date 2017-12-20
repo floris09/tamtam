@@ -7,7 +7,7 @@ import '../styles/components/Instagram.css'
 class Instagram extends PureComponent {
 
 componentWillMount(){
-  this.props.fetchInstagram()
+  if(this.props.instagram.length === 0){this.props.fetchInstagram()}
 }
 
 render() {
