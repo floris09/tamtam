@@ -32,7 +32,7 @@ async next(index) {
   if (index === 2) { this.props.slide(0) }
   else { this.props.slide(index+1) }
 
-  await this.sleep(5000)
+  await this.sleep(10000)
 
   this.setState({clicked: false})
 }
@@ -43,7 +43,7 @@ async previous(index) {
   if (index === 0) { this.props.slide(2) }
   else { this.props.slide(index-1) }
 
-  await this.sleep(5000)
+  await this.sleep(10000)
 
   this.setState({clicked: false})
 }

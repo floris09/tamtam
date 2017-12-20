@@ -1,8 +1,8 @@
 import React, { PureComponent } from 'react'
 import { connect } from 'react-redux'
 import fetchInstagram from '../actions/instagram/fetch'
-import { Instagram, About, Slider, Navbar, Footer } from '../components'
-import '../styles/containers/Home.css'
+import {  Navbar, Footer, Form } from '../components'
+import '../styles/containers/Contact.css'
 
 class Home extends PureComponent {
 
@@ -13,10 +13,12 @@ componentWillMount(){
 render() {
   return (
     <div className="Home">
-      <Navbar home='white'/>
-      <Slider />
-      <About />
-      <Instagram />
+      <Navbar contact='white'/>
+      <div class='contact-component'>
+        <div class='contact-container'>
+          <Form />
+        </div>
+      </div>
       <Footer />
     </div>
   )

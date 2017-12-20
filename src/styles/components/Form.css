@@ -1,0 +1,30 @@
+.form-container {
+  opacity: 0.2;
+  background-color: #FFFFFF;
+  width: 620px;
+  height: 290px;
+  margin: auto;
+  position: relative;
+  top: 270px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.input-small {
+  width: 295px;
+  height: 50px;
+  background: #FFFFFF;
+  margin: 2px 2px;
+}
+
+.textarea {
+  width: 600px;
+  height: 120px;
+  margin-top: 20px;
+}
+
+.invalid {
+  height: 100px;
+  width: 300px;
+  background-color: red;
+}

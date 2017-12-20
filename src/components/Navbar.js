@@ -1,23 +1,27 @@
 import React, { PureComponent } from 'react'
 import { connect } from 'react-redux'
 import Logo from '../assets/Logo.png'
+import { push } from 'react-router-redux'
 import '../styles/components/Navbar.css'
 
 class Navbar extends PureComponent {
 
-componentWillMount(){
+route(path) {
+  this.props.push(path)
 }
 
 render() {
+  const {home, people, contact} = this.props
+
   return (
     <div className='navbar'>
       <img src={Logo} alt='logo' id='logo'/>
-      <p id='home'>Home</p>
-      <p>People</p>
-      <p>Contact</p>
+      <p id='home' onClick={this.route.bind(this,'/')} style={{color: home}}>Home</p>
+      <p id='people' style={{color: people}}>People</p>
+      <p id='contact' onClick={this.route.bind(this,'/contact')} style={{color: contact}}>Contact</p>
     </div>
   )
 }
 }
 
-export default connect(null, {  })(Navbar)
+export default connect(null, { push })(Navbar)

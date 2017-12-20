@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import { Route } from 'react-router-dom'
 
 import {
-  Home
+  Home,
+  Contact
 } from './containers'
 
 export default class Routes extends Component {
@@ -10,6 +11,7 @@ export default class Routes extends Component {
     return (
       <div>
         <Route exact path="/" component={Home} />
+        <Route path="/contact" component={Contact} />
       </div>
     )
   }
