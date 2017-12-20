@@ -4,6 +4,7 @@
   width: 100%;
   background-size: cover;
   background-position: center center;
+  margin-top: 80px;
 }
 
 .slider-container {
@@ -51,7 +52,7 @@
   width: 40px;
   height: 40px;
   position: absolute;
-  top: 340px;
+  top: 420px;
   left: 480px;
 }
 
@@ -61,7 +62,7 @@
   width: 40px;
   height: 40px;
   position: absolute;
-  top: 340px;
+  top: 420px;
   right: 480px;
 }
 
