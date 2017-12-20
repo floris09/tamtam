@@ -8,3 +8,7 @@
 .footer img {
   margin: 25px;
 }
+
+.footer img:hover {
+  color: #FD5454;
+}

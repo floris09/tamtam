@@ -12,7 +12,7 @@ render() {
   return (
     <div className='navbar'>
       <img src={Logo} alt='logo' id='logo'/>
-      <p>Home</p>
+      <p id='home'>Home</p>
       <p>People</p>
       <p>Contact</p>
     </div>
