@@ -15,9 +15,10 @@ render() {
     <div className="Home">
       <Navbar contact='white'/>
       <div class='contact-component'>
-        <div class='contact-container'>
+      <div className='contact-header'>
+        WE WOULD LOVE TO HEAR FROM YOU
+      </div>
           <Form />
-        </div>
       </div>
       <Footer />
     </div>
