@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react'
 import { connect } from 'react-redux'
+import CheckIcon from 'material-ui/svg-icons/action/done'
 import '../styles/components/Form.css'
 
 class Form extends PureComponent {
@@ -12,10 +13,10 @@ class Form extends PureComponent {
       emailAddress: '',
       phoneNumber: '',
       message: '',
-      firstNameIsValid: true,
-      lastNameIsValid: true,
-      emailAddressIsValid: true,
-      phoneNumberIsValid: true
+      firstNameIsValid: false,
+      lastNameIsValid: false,
+      emailAddressIsValid: false,
+      phoneNumberIsValid: false
     }
 
     this.handleInputChange = this.handleInputChange.bind(this)
@@ -25,6 +26,8 @@ class Form extends PureComponent {
     const target = event.target
     const value = target.value
     const name = target.name
+    const regexpEmail = /^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/
+    const regexpPhone = /^[0-9]+$/
 
     if (name === "firstName") {
       this.setState({ firstNameIsValid: value && value.indexOf(' ') < 0 })
@@ -35,11 +38,11 @@ class Form extends PureComponent {
     }
 
     if (name === "emailAddress") {
-      this.setState({ emailAddressIsValid: value && value.indexOf(' ') < 0 })
+      this.setState({ emailAddressIsValid: value && value.match(regexpEmail) !== null })
     }
 
     if (name === "phoneNumber") {
-      this.setState({ phoneNumberIsValid: value && value.indexOf(' ') < 0 })
+      this.setState({ phoneNumberIsValid: value && value.match(regexpPhone)!== null })
     }
 
     this.setState({
@@ -50,7 +53,23 @@ class Form extends PureComponent {
 render() {
   return (
     <div className='form-container'>
-      <div className={this.state.emailAddressIsValid ? '' : 'invalid'} />
+
+      <div className={this.state.firstNameIsValid ? 'firstName valid' : 'firstName'}>
+        <CheckIcon />
+      </div>
+
+      <div className={this.state.lastNameIsValid ? 'lastName valid' : 'lastName'}>
+        <CheckIcon />
+      </div>
+
+      <div className={this.state.emailAddressIsValid ? 'emailAddress valid' : 'emailAddress'}>
+        <CheckIcon />
+      </div>
+
+      <div className={this.state.phoneNumberIsValid ? 'phoneNumber valid' : 'phoneNumber'}>
+        <CheckIcon />
+      </div>
+
       <form className='form'>
           <input
             className='input-small'
@@ -59,7 +78,6 @@ render() {
             placeholder='First name'
             value={this.state.firstName}
             onChange={this.handleInputChange} />
-
           <input
             className='input-small'
             name="lastName"

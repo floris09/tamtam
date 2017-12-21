@@ -47,8 +47,35 @@ textarea:focus {
   color: black;
 }
 
-.invalid {
-  height: 100px;
-  width: 300px;
-  background-color: red;
+.firstName {
+  display: none;
+  position: absolute;
+  color: #7BDB4C;
+  top: 40px;
+  left: 270px;
+}
+
+.lastName {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 20px;
+}
+
+.emailAddress {
+  display: none;
+  position: absolute;
+  top: 98px;
+  left: 270px;
+}
+
+.phoneNumber {
+  display: none;
+  position: absolute;
+  top: 98px;
+  right: 20px;
+}
+
+.valid {
+  display: inline;
 }
