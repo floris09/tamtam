@@ -18,7 +18,7 @@ render() {
       <div className='contact-header'>
         WE WOULD LOVE TO HEAR FROM YOU
       </div>
-          <Form />
+      <Form />
       </div>
       <Footer />
     </div>

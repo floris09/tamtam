@@ -80,6 +80,26 @@ textarea:focus {
   display: inline;
 }
 
+.submitFirstName {
+display: none;
+}
+
+.submitLastName {
+display: none;
+}
+
+.submitPhoneNumber {
+display: none;
+}
+
+.submitEmailAddress {
+display: none;
+}
+
+.submitInvalid {
+display: inline;
+}
+
 .send-button {
   height: 40px;
   width: 150px;
