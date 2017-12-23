@@ -1,6 +1,6 @@
 .instagram-component {
   text-align: center;
-  height: 1269px;
+  padding-bottom: 200px;
   width: 100%;
   background-image: url('../../assets/Feed_bg.jpg');
   background-position: center center;
@@ -50,4 +50,56 @@ a {
   height: 300px;
   background-size: cover;
   background-position: center center;
+}
+
+@media only screen and (max-width: 400px) {
+
+  .instagram-item p {
+    font-family: Helvetica;
+    font-size: 15px;
+    color: #76797F;
+    line-height: 21px;
+  }
+
+  h2 {
+    font-family: Helvetica;
+    font-size: 20px;
+    color: #789199;
+    line-height: 26px;
+  }
+
+  #at {
+    /* subtitle: */
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: #FFFFFF;
+    line-height: 30px;
+  }
+
+}
+
+@media only screen and (max-device-width: 400px) {
+
+  .instagram-item p {
+    font-family: Helvetica;
+    font-size: 15px;
+    color: #76797F;
+    line-height: 21px;
+  }
+
+  h2 {
+    font-family: Helvetica;
+    font-size: 20px;
+    color: #789199;
+    line-height: 26px;
+  }
+
+  #at {
+    /* subtitle: */
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: #FFFFFF;
+    line-height: 30px;
+  }
+
 }
