@@ -122,3 +122,18 @@ display: inline;
 .send-button p {
   padding-top: 9px;
 }
+
+@media only screen and (max-device-width: 400px) {
+  .form-container {
+    width: 100%;
+    position: static;
+  }
+
+  textarea {
+    width: 95%;
+  }
+
+  input {
+    width: 95%;
+  }
+}

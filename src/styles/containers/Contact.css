@@ -2,7 +2,7 @@
   background-image: url('../../assets/Feed_bg.jpg');
   background-size: cover;
   background-position: top center;
-  height: 826px;
+  height: 900px;
 }
 
 .contact-header {
@@ -18,4 +18,62 @@
   color: #FFFFFF;
   letter-spacing: 0;
   line-height: 50.4px;
+}
+
+@media only screen and (max-width: 1050px) {
+  .contact-component {
+    height: 1300px;
+  }
+
+  .contact-header {
+    font-family: Helvetica;
+    font-size: 26px;
+    line-height: 36.4px;
+  }
+}
+
+@media only screen and (max-device-width: 1050px) {
+  .contact-component {
+    height: 1300px;
+  }
+
+  .contact-header {
+    font-family: Helvetica;
+    font-size: 26px;
+    line-height: 36.4px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .contact-component {
+    height: 1300px;
+  }
+
+  .contact-header {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    width: 200px;
+    letter-spacing: 0;
+    line-height: 28px;
+    top: 150px;
+    margin-bottom: 150px;
+  }
+}
+
+@media only screen and (max-device-width: 400px) {
+  .contact-component {
+    height: 1300px;
+  }
+
+  .contact-header {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    width: 200px;
+    letter-spacing: 0;
+    line-height: 28px;
+    top: 150px;
+    margin-bottom: 150px;
+  }
 }
