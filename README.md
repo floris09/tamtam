@@ -35,3 +35,4 @@ cd tamtam
 yarn install
 yarn start
 ```
+Or you can see it online [here](https://tamtaamtaaam.herokuapp.com)
