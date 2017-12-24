@@ -48,7 +48,7 @@ class Form extends PureComponent {
     }
 
     if (name === "message") {
-      this.setState({ messageIsValid: value })
+      this.setState({ messageIsValid: value !== '' })
     }
 
     this.setState({
@@ -78,18 +78,6 @@ render() {
   return (
     <div className='form-container'>
 
-      <div className={this.state.firstNameIsValid ? 'firstName valid' : 'firstName'}>
-        <CheckIcon />
-      </div>
-
-      <div className={this.state.lastNameIsValid ? 'lastName valid' : 'lastName'}>
-        <CheckIcon />
-      </div>
-
-      <div className={this.state.emailAddressIsValid ? 'emailAddress valid' : 'emailAddress'}>
-        <CheckIcon />
-      </div>
-
       <form className='form'>
 
         <div className='input-container'>
@@ -103,6 +91,9 @@ render() {
             <div className={this.state.subFirstNameVal ? 'submitFirstName' : 'submitFirstName submitInvalid'}>
               We need your first name.
             </div>
+            <div className={this.state.firstNameIsValid ? 'firstName valid' : 'firstName'} id={this.state.subFirstNameVal ? '' : 'moveFirstName'}>
+              <CheckIcon />
+            </div>
         </div>
 
         <div className='input-container'>
@@ -115,6 +106,9 @@ render() {
             onChange={this.handleInputChange} />
             <div className={this.state.subLastNameVal ? 'submitLastName' : 'submitLastName submitInvalid'}>
               We need your last name.
+            </div>
+            <div className={this.state.lastNameIsValid ? 'lastName  valid' : 'lastName'} id={this.state.subLastNameVal ? '' : 'moveLastName'}>
+              <CheckIcon />
             </div>
         </div>
         <br />
@@ -130,6 +124,9 @@ render() {
             onChange={this.handleInputChange} />
             <div className={this.state.subEmailAddressVal ? 'submitEmailAddress' : 'submitEmailAddress submitInvalid'}>
               Please use a valid email address.
+            </div>
+            <div className={this.state.emailAddressIsValid ? 'emailAddress valid' : 'emailAddress'} id={this.state.subEmailAddressVal ? '' : 'moveEmailAddress'}>
+              <CheckIcon />
             </div>
           </div>
 

@@ -3,7 +3,8 @@ import { Route } from 'react-router-dom'
 
 import {
   Home,
-  Contact
+  Contact,
+  Success
 } from './containers'
 
 export default class Routes extends Component {
@@ -12,6 +13,7 @@ export default class Routes extends Component {
       <div>
         <Route exact path="/" component={Home} />
         <Route path="/contact" component={Contact} />
+        <Route path="/success" component={Success} />
       </div>
     )
   }

@@ -91,6 +91,18 @@ textarea:focus {
   left: 270px;
 }
 
+#moveFirstName {
+
+}
+
+#moveLastName {
+
+}
+
+#moveEmailAddress {
+  top: 140px;
+}
+
 .phoneNumber {
   display: none;
   position: absolute;
@@ -256,6 +268,40 @@ display: inline-block;
   .submitEmailAddress {
     width: 100%;
     float: none;
+  }
+
+  .firstName {
+    top: 287px;
+    left: 88%;
+  }
+
+  .lastName {
+    top: 345px;
+    left: 88%;
+  }
+
+  .emailAddress {
+    top: 405px;
+    left: 88%;
+  }
+
+  #moveFirstName {
+
+  }
+
+  #moveLastName {
+    top: 388px;
+  }
+
+  #moveEmailAddress {
+    top: 490px;
+  }
+
+  .phoneNumber {
+    display: none;
+    position: absolute;
+    top: 98px;
+    right: 20px;
   }
 
 }

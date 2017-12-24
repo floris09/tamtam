@@ -20,6 +20,35 @@
   line-height: 50.4px;
 }
 
+.success-container {
+  background: rgba(0,0,0,0.20);
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  color: #FFFFFF;
+  letter-spacing: 0.5px;
+  line-height: 25.2px;
+  width: 620px;
+  height: 60px;
+  position: relative;
+  top: 260px;
+  margin: auto;
+}
+
+.success-container p {
+  display: inline-block;
+  width: 400px;
+  margin-left: 20px;
+}
+
+#check {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  position: relative;
+  top: 5px;
+  margin-left: 20px;
+}
+
 @media only screen and (max-width: 1050px) {
   .contact-component {
     height: 1300px;
@@ -59,6 +88,20 @@
     top: 150px;
     margin-bottom: 150px;
   }
+
+  .success-container {
+    width: 100%;
+    height: auto;
+    top: 70px;
+  }
+
+  .success-container p {
+    width: 80%;
+  }
+
+  #check {
+    top: -5px;
+  }
 }
 
 @media only screen and (max-device-width: 500px) {
@@ -75,5 +118,19 @@
     line-height: 28px;
     top: 150px;
     margin-bottom: 150px;
+  }
+
+  .success-container {
+    width: 100%;
+    height: auto;
+    top: 70px;
+  }
+
+  .success-container p {
+    width: 80%;
+  }
+
+  #check {
+    top: -5px;
   }
 }
