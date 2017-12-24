@@ -15,6 +15,7 @@ render() {
 
   return (
     <div className='navbar'>
+      <div id='menu' onClick={this.route.bind(this,'/nav')}><i class="material-icons">menu</i></div>
       <img src={Logo} alt='logo' id='logo'/>
       <p id='home' onClick={this.route.bind(this,'/')} style={{color: home}}>Home</p>
       <p id='people' style={{color: people}}>People</p>

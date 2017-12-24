@@ -30,3 +30,68 @@
 .navbar p:hover {
   color: #FD5454;
 }
+
+#menu {
+  display: none;
+}
+
+.click-menu {
+  display: none;
+}
+
+@media only screen and (max-device-width: 500px) {
+
+  #logo {
+    margin-left: 25%;
+  }
+
+  #menu {
+    display: inline-block;
+    position: relative;
+    left: 10px;
+    bottom: 17px;
+    color: white;
+  }
+
+  #close {
+    display: inline-block;
+    position: relative;
+    left: 10px;
+    bottom: 17px;
+    color: white;
+  }
+
+  .click-menu {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    border-top: 1px solid white;
+    display: block;
+    background-color: black;
+    margin-top: -4px;
+    text-align: center;
+  }
+
+  .click-menu h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    color: white;
+    letter-spacing: 0;
+    line-height: 44px;
+    margin-top: 40px;
+  }
+
+  .click-menu h2:hover {
+    color: #FD5454;
+  }
+
+  .material-icons {
+    font-size: 50px;
+  }
+
+  #home,
+  #people,
+  #contact {
+    display: none;
+  }
+}
