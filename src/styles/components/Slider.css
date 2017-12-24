@@ -76,7 +76,7 @@
   padding-top: 5px;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
   .slider-component {
     height: 500px;
   }
@@ -104,7 +104,7 @@
   }
 }
 
-@media only screen and (max-device-width: 400px) {
+@media only screen and (max-device-width: 500px) {
   .slider-component {
     height: 500px;
   }

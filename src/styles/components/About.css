@@ -56,7 +56,7 @@
 
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
   .about-component {
     height: 354px;
   }
@@ -76,7 +76,7 @@
   }
 }
 
-@media only screen and (max-device-width: 400px) {
+@media only screen and (max-device-width: 500px) {
   .about-component {
     height: 354px;
   }

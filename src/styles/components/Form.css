@@ -5,7 +5,7 @@
 .form-container {
   background-color: rgba(255,255,255,0.2);
   width: 620px;
-  height: 290px;
+  height: auto;
   margin: auto;
   position: relative;
   top: 270px;
@@ -22,12 +22,20 @@ line-height: 26px;
 width: 295px;
 height: 50px;
 background: #FFFFFF;
-margin: 2px 2px;
+margin: 2px 2px 2px 0px;
 padding-left: 10px;
 }
 
 input:focus {
   color: black;
+}
+
+.input-container {
+  width: 295px;
+  height: auto;
+  margin: 2px 2px;
+  padding-left: 0px;
+  display: inline-block;
 }
 
 textarea {
@@ -45,6 +53,20 @@ textarea {
 
 textarea:focus {
   color: black;
+}
+
+.textarea-container {
+  width: 600px;
+  height: auto;
+  margin: 2px 2px;
+  padding-left: 0px;
+  display: inline-block;
+  margin-bottom: -20px;
+}
+
+.form-fields {
+  clear: left;
+  clear: right;
 }
 
 .firstName {
@@ -81,23 +103,74 @@ textarea:focus {
 }
 
 .submitFirstName {
-display: none;
+  display: none;
+  width: 293px;
+  height: 40px;
+  background: #555D60;
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  color: #FFFFFF;
+  letter-spacing: 0.5px;
+  line-height: 21px;
+  margin: -2px 2px 5px 1px;
+  text-align: left;
+  padding-left: 15px;
+  padding-top: 7px;
+  float: left;
 }
 
 .submitLastName {
-display: none;
+  display: none;
+  width: 295px;
+  height: 40px;
+  background: #555D60;
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  color: #FFFFFF;
+  letter-spacing: 0.5px;
+  line-height: 21px;
+  margin: -2px 0px 5px 2px;
+  text-align: left;
+  padding-left: 15px;
+  padding-top: 7px;
+  float: right;
 }
 
 .submitMessage {
-display: none;
+  display: none;
+  width: 600px;
+  height: 40px;
+  background: #555D60;
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  color: #FFFFFF;
+  letter-spacing: 0.5px;
+  line-height: 21px;
+  margin: -4px 5px 5px 0px;
+  text-align: left;
+  padding-left: 15px;
+  padding-top: 7px;
 }
 
 .submitEmailAddress {
-display: none;
+  display: none;
+  width: 295px;
+  height: 40px;
+  background: #555D60;
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  color: #FFFFFF;
+  letter-spacing: 0.5px;
+  line-height: 21px;
+  margin: -2px 2px 5px 1px;
+  text-align: left;
+  padding-left: 15px;
+  padding-top: 7px;
+  float: left;
 }
 
 .submitInvalid {
-display: inline;
+display: inline-block;
 }
 
 .send-button {
@@ -112,7 +185,7 @@ display: inline;
   line-height: 21px;
   margin: auto;
   position: relative;
-  top: 40px;
+  top: 80px;
 }
 
 .send-button:hover {
@@ -123,17 +196,66 @@ display: inline;
   padding-top: 9px;
 }
 
-@media only screen and (max-device-width: 400px) {
+@media only screen and (max-width: 500px) {
   .form-container {
     width: 100%;
     position: static;
   }
 
+  input {
+    width: 100%;
+  }
+
   textarea {
+    width: 100%;
+  }
+
+  .textarea-container {
     width: 95%;
   }
 
-  input {
+  .input-container {
     width: 95%;
   }
+
+  .submitMessage,
+  .submitFirstName,
+  .submitLastName,
+  .submitEmailAddress {
+    width: 100%;
+    float: none;
+  }
+
+}
+
+@media only screen and (max-device-width: 500px) {
+  .form-container {
+    width: 100%;
+    position: static;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  textarea {
+    width: 100%;
+  }
+
+  .textarea-container {
+    width: 95%;
+  }
+
+  .input-container {
+    width: 95%;
+  }
+
+  .submitMessage,
+  .submitFirstName,
+  .submitLastName,
+  .submitEmailAddress {
+    width: 100%;
+    float: none;
+  }
+
 }

@@ -2,10 +2,6 @@ import React, { PureComponent } from 'react'
 import { connect } from 'react-redux'
 import { push } from 'react-router-redux'
 import CheckIcon from 'material-ui/svg-icons/action/done'
-import firstNameImg from '../assets/firstNameValidation.png'
-import lastNameImg from '../assets/lastNameValidation.png'
-import emailImg from '../assets/emailAddressValidation.png'
-import messageImg from '../assets/messageValidation.png'
 import '../styles/components/Form.css'
 
 class Form extends PureComponent {
@@ -69,7 +65,7 @@ class Form extends PureComponent {
 
     firstNameIsValid ? this.setState({subFirstNameVal:true}) : this.setState({subFirstNameVal:false})
 
-    lastNameIsValid ? this.setState({subLastNameVal:true}) : this.setState({sublastNameVal:false})
+    lastNameIsValid ? this.setState({subLastNameVal:true}) : this.setState({subLastNameVal:false})
 
     emailAddressIsValid ? this.setState({subEmailAddressVal:true}) : this.setState({subEmailAddressVal:false})
 
@@ -85,21 +81,18 @@ render() {
       <div className={this.state.firstNameIsValid ? 'firstName valid' : 'firstName'}>
         <CheckIcon />
       </div>
-      <img src={{firstNameImg}} alt='validation-error' className={this.state.subFirstNameVal ? 'submitFirstName' : 'submitFirstName submitInvalid'} />
 
       <div className={this.state.lastNameIsValid ? 'lastName valid' : 'lastName'}>
         <CheckIcon />
       </div>
-      <img src={{lastNameImg}} alt='validation-error' className={this.state.subLastNameVal ? 'submitLastName' : 'submitLastName submitInvalid'} />
 
       <div className={this.state.emailAddressIsValid ? 'emailAddress valid' : 'emailAddress'}>
         <CheckIcon />
       </div>
-      <img src={{emailImg}} alt='validation-error' className={this.state.subEmailAddressVal ? 'submitEmailAddress' : 'submitEmailAddress submitInvalid'} />
-
-      <img src={{messageImg}} alt='validation-error' className={this.state.subMessageVal ? 'submitMessage' : 'submitMessage submitInvalid'} />
 
       <form className='form'>
+
+        <div className='input-container'>
           <input
             className='input-small'
             name="firstName"
@@ -107,6 +100,12 @@ render() {
             placeholder='First name'
             value={this.state.firstName}
             onChange={this.handleInputChange} />
+            <div className={this.state.subFirstNameVal ? 'submitFirstName' : 'submitFirstName submitInvalid'}>
+              We need your first name.
+            </div>
+        </div>
+
+        <div className='input-container'>
           <input
             className='input-small'
             name="lastName"
@@ -114,7 +113,14 @@ render() {
             placeholder="Last name"
             value={this.state.lastName}
             onChange={this.handleInputChange} />
+            <div className={this.state.subLastNameVal ? 'submitLastName' : 'submitLastName submitInvalid'}>
+              We need your last name.
+            </div>
+        </div>
         <br />
+        <div className='form-fields'>
+
+         <div className='input-container'>
           <input
             className='input-small'
             name="emailAddress"
@@ -122,7 +128,12 @@ render() {
             placeholder="Your e-mail address"
             value={this.state.emailAddress}
             onChange={this.handleInputChange} />
+            <div className={this.state.subEmailAddressVal ? 'submitEmailAddress' : 'submitEmailAddress submitInvalid'}>
+              Please use a valid email address.
+            </div>
+          </div>
 
+        <div className='input-container'>
           <input
             className='input-small'
             name="phoneNumber"
@@ -130,7 +141,10 @@ render() {
             placeholder="Your phone number (optional)"
             value={this.state.phoneNumber}
             onChange={this.handleInputChange} />
+          </div>
+        </div>
         <br />
+        <div className='textarea-container'>
         <textarea
           className='textarea'
           name="message"
@@ -138,6 +152,10 @@ render() {
           placeholder="Your message..."
           value={this.state.message}
           onChange={this.handleInputChange} />
+          <div className={this.state.subMessageVal ? 'submitMessage' : 'submitMessage submitInvalid'}>
+            Sorry, your message can&#39;t be empty
+          </div>
+          </div>
       </form>
       <div className='send-button' onClick={this.handleSubmit.bind(this)}>
         <p>Send</p>
