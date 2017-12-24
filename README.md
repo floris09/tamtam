@@ -13,15 +13,15 @@ React Application built for a job application assignment.
 - Add scroll-down button on landing page
 - Add form mailer functionality
 
-<img src="https://github.com/floris09/tamtam/blob/master/src/assets/screenshots/Screen%20Shot%202017-12-25%20at%2000.17.07.png" width="48%" align="left" margin="0" />
+<img src="https://github.com/floris09/tamtam/blob/master/src/assets/screenshots/Screen%20Shot%202017-12-25%20at%2000.17.07.png" width="47%" align="left" margin="0" />
 
-<img src="https://github.com/floris09/tamtam/blob/master/src/assets/screenshots/Screen%20Shot%202017-12-25%20at%2000.17.25.png" width="48%" align="left" margin="0" />
+<img src="https://github.com/floris09/tamtam/blob/master/src/assets/screenshots/Screen%20Shot%202017-12-25%20at%2000.17.25.png" width="47%" align="left" margin="0" />
 
 <br clear="left" />
 
-<img src="https://github.com/floris09/tamtam/blob/master/src/assets/screenshots/Screen%20Shot%202017-12-25%20at%2000.17.43.png" width="48%" align="left" margin="0" />
+<img src="https://github.com/floris09/tamtam/blob/master/src/assets/screenshots/Screen%20Shot%202017-12-25%20at%2000.17.43.png" width="47%" align="left" margin="0" />
 
-<img src="https://github.com/floris09/tamtam/blob/master/src/assets/screenshots/Screen%20Shot%202017-12-25%20at%2000.18.34.png" width="48%" align="left" margin="0" />
+<img src="https://github.com/floris09/tamtam/blob/master/src/assets/screenshots/Screen%20Shot%202017-12-25%20at%2000.18.34.png" width="47%" align="left" margin="0" />
 
 <br clear="left" />
 
