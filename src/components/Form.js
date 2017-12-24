@@ -92,7 +92,7 @@ render() {
               We need your first name.
             </div>
             <div className={this.state.firstNameIsValid ? 'firstName valid' : 'firstName'} id={this.state.subFirstNameVal ? '' : 'moveFirstName'}>
-              <CheckIcon />
+              <CheckIcon style={{color:'#7BDB4C'}} />
             </div>
         </div>
 
@@ -108,7 +108,7 @@ render() {
               We need your last name.
             </div>
             <div className={this.state.lastNameIsValid ? 'lastName  valid' : 'lastName'} id={this.state.subLastNameVal ? '' : 'moveLastName'}>
-              <CheckIcon />
+              <CheckIcon style={{color:'#7BDB4C'}}/>
             </div>
         </div>
         <br />
@@ -126,7 +126,7 @@ render() {
               Please use a valid email address.
             </div>
             <div className={this.state.emailAddressIsValid ? 'emailAddress valid' : 'emailAddress'} id={this.state.subEmailAddressVal ? '' : 'moveEmailAddress'}>
-              <CheckIcon />
+              <CheckIcon style={{color:'#7BDB4C'}}/>
             </div>
           </div>
 
